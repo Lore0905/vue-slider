@@ -71,7 +71,7 @@ const app = new Vue(
                 else if(this.currentItems === this.items.length -1){
                     this.currentItems = 0;
                 }
-            }, 300);
+            }, 3000);
 
         }
     }
