@@ -34,7 +34,22 @@ const app = new Vue(
             ]
         },
         methods: {
-            
+            arrowDownOnClick: function(){
+                if (this.items.length -1 > this.currentItems){
+                    this.currentItems ++;
+                }
+                else{
+                    this.currentItems = 0;
+                }
+            },
+            arrowUpOnClick: function(){
+                if ( this.currentItems === 0 ){
+                    this.currentItems = this.items.length -1
+                }
+                else{
+                    this.currentItems --;
+                }
+            }
         }
     }
 )
