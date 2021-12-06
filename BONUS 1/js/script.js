@@ -58,7 +58,6 @@ const app = new Vue(
             clickTumbs: function(test){
                 this.currentItems = test
             }
-
         },
         // BONUS 2 
         // metto tuttta la funzione prima che si crei html  e quindi metto tutto su created
@@ -72,7 +71,7 @@ const app = new Vue(
                 else if(this.currentItems === this.items.length -1){
                     this.currentItems = 0;
                 }
-            }, 3000);
+            }, 300);
 
         }
     }
